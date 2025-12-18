@@ -74,7 +74,7 @@ export default function StockChart({
         });
 
         mainChart.priceScale('volume').applyOptions({
-            scaleMargins: { top: 0.8, bottom: 0 },
+            scaleMargins: { top: 0.7, bottom: 0 },
         });
         volumeSeries.setData(data.map((d: any) => ({
             time: d.time, value: d.volume, color: d.close >= d.open ? 'rgba(34, 197, 94, 0.3)' : 'rgba(239, 68, 68, 0.3)'
